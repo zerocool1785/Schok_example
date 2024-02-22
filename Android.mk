@@ -1,10 +1,12 @@
-# Android device tree for Schok Schok Volt SV55 (SV55216)
-
-```
 #
 # Copyright (C) 2023 The Android Open Source Project
 # Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-```
+
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),SV55216)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif
